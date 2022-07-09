@@ -6,6 +6,8 @@
 注意：除了卡没什么缺点 (hh
 
 ```js
+npm i aboym-waterfall
+
 // ------全局引入------
 import Vue from 'vue';
 import aWaterfall from 'aboym-waterfall';
