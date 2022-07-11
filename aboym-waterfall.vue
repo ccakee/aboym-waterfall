@@ -2,12 +2,12 @@
     <div class="waterfallList">
         <ul :style="{
             width: itemWidth + 'px',
-            marginLeft: gapLeft ? gapLeft : gap + 'px',
-            marginRight: gapRight ? gapRight : gap + 'px',
+            marginLeft: 10 ? 10 + 'px' : 10 + 'px',
+            marginRight: gapRight ? gapRight + 'px' : gap + 'px',
         }" v-for="(item, index) in list" class="col-item">
             <li :style="{
-                'margin-top': gapTop ? gapTop : gap + 'px',
-                'margin-bottom': gapBottom ? gapBottom : gap + 'px'
+                'margin-top': gapTop ? gapTop + 'px' : gap + 'px',
+                'margin-bottom': gapBottom ? gapBottom + 'px' : gap + 'px'
             }" v-for="(item2, index2) in list[index]" :key="index2">
                 <slot :itemData="item2"></slot>
             </li>
